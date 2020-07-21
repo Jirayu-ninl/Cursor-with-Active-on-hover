@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    text-align: center;
+    background: #111;
+    color: #FFF;
+    cursor: none;
+}
+
+/* Content CSS */
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: block;
+}
+
+
+h4 {
+    opacity: 0.6;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-color: #FFF;
+}
+
+/* Cursor CSS */
+
+.c-inner,
+.c-outer {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 99;
+}
+
+.c-inner {
+    background-color: #fff;
+    height: 5px;
+    width: 5px;
+}
+.c-outer {
+    height: 45px;
+    width: 45px;
+    transition: all .3s ease-out;
+}
+
+.c-outer {
+    border: 1px solid #fff;
+    opacity: 0.6;
+}
+
+.c-outer.active {
+    transform: scale(2) translateX(-25%) translateY(-25%);
+    border: none;
+    mix-blend-mode: difference;
+    opacity: 1;
+}
+
+.c-outer.active {
+    background: #fff;
+}
