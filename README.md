@@ -1,2 +1,2 @@
-# Cursor-with-Active-on-hover
-Change cursor and active when hover on element with JavaScript
+# CurXor v.1.0
+Change cursor and active on hover target with JavaScript
